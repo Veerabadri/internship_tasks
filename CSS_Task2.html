@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!--display flex for horizantal nv bar-->
+        <!--remove display flex for vertical bar-->
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                
+            }
+            #z a{
+                display: block;
+                width: 170px;
+                background-color: rgb(162, 249, 255);
+                text-align: left;
+                text-decoration: none;
+                padding: 10px;
+            }
+            #g{
+                color: white;
+                background-color: orange !important;
+            }
+
+            #h{
+                display: inline;
+                float: left;
+                padding: 10px;
+                background-color: rgb(205, 205, 205);
+                border-right: 1px solid blue;
+                border-left: 1px solid blue;
+                border-collapse: collapse;
+            }
+
+            #b{
+                display: flex;
+                float: left;
+                padding: 10px;
+                background-color: grey;
+                border-right: 0.2px solid rgb(205, 205, 205);
+            }
+
+            #s{
+                color: white;
+            }
+
+            #a a{
+                text-decoration: none;
+            }
+
+            #a li{
+                display: flex;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            #q{
+                float: left;
+            }
+
+            #w{
+                margin-top: 60px;
+                margin-left: 80px;
+                float: left;
+            }
+
+            #c{
+                border: 1px solid black;
+                padding: 10px 7px 1px 5px;
+            }
+
+            #d{
+                border: 1px solid black;
+                padding: 10px 0px 10px 5px;
+            }
+        </style>
+     </head>
+     <body>
+        <br>
+        <div>
+            <div id="q">
+                <h1 style="white-space: pre;">      Vertical Navigation Bar</h1>
+                <nav id="c">
+                    <ul id="z">
+                        <li><a id="g" href="default.asp">Home</a></li>
+                        <li><a href="news.asp">Java</a></li>
+                        <li><a href="contact.asp">CSS</a></li>
+                        <li><a href="about.asp">HTML</a></li>
+                        <li><a href="about.asp">Bootstrap</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="w">
+                <h1 style="white-space: pre">         Horizontal Navigation Bar</h1>
+                <br>
+                <table>
+                    <tr>
+                        <td id="d">
+                            <ul id="a">
+                                <li id="b"><a id="s" href="default.asp">Home</a></li>
+                                <li><a href="news.asp">Java</a></li>
+                                <li><a href="contact.asp">CSS</a></li>
+                                <li><a href="about.asp">HTML</a></li>
+                                <li><a href="about.asp">Bootstrap</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+     </body>
+</html>

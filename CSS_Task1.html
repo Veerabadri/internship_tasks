@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <body>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            table,
+            th,
+            td,
+            tr {
+                border: 1px solid black;
+                padding: 1px;
+                width: 500px;
+                background-color: lightblue;
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+            .table-container {
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+            }
+            #shape1 {
+                height: 50px;
+                width: 100px;
+                border: 3px solid green;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                margin: 10px;
+            }
+            #shape2 {
+                height: 50px;
+                width: 100px;
+                border: 3px solid green;
+                margin: 10px;
+            }
+            #shape3 {
+                height: 50px;
+                width: 100px;
+                border-radius: 50%;
+                border: 3px solid green;
+                margin: 10px;
+            }
+            #shape4 {
+                height: 50px;
+                width: 100px;
+                border: 3px solid green;
+                border-top-right-radius: 15px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                border-top-left-radius: 15px;
+                margin: 10px;
+            }
+            #shape5 {
+                height: 50px;
+                width: 100px;
+                border: 3px solid green;
+                border-top-right-radius: 25px;
+                border-bottom-left-radius: 25px;
+                margin: 10px;
+            }
+            .container {
+                display: grid;
+                grid-template-columns: 150px 150px 150px;
+                padding: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+        <div class="table-container">
+        <table id="td" border="1">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <div id="shape1"></div>
+        <div id="shape1"></div>
+        <div id="shape4"></div>
+        <div id="shape1"></div>
+        <div id="shape2"></div>
+        <div id="shape4"></div>
+        <div id="shape3"></div>
+        <div id="shape2"></div>
+        <div id="shape5"></div>
+    </div>
+    </head>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #f{
+            width: 1000px;
+            height: 580px;
+            border: 1px solid rgba(165, 10, 77, 0.977);
+            background-color: rgba(165, 10, 77, 0.977);
+            margin: 0 auto;
+        }
+
+        #g{
+            border: 1px solid rgb(116, 5, 49);
+            width: 600px;
+            height: 520px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(116, 5, 49);
+            color: white;
+        }
+
+        input, select, textarea{
+            margin-top: 15px;
+            width: 180px;
+            margin-left: 0px;
+            padding: 5px;
+        }
+
+        input[type="radio"]{
+            width: 10px;
+            height: 10px;
+        }
+
+        select{
+            width: 135px;
+            margin-left: 0px;
+            margin-right: 38px;
+        }
+        input[type="submit"]{
+            width: 320px;
+            border-radius: 5px;
+            font-size: large;
+            border-color: white;
+        }
+        input[type="text"], input[type="email"]{
+            margin-left: 63px;
+        }
+        textarea{
+            margin-left: 43px;
+            margin-bottom: 0px;
+        }
+        #x{
+            margin-top: 40px;
+            margin-bottom: 30px;
+            margin-left: 200px;
+        }
+        .k{
+            margin-left: 53px;
+        }
+        #about{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>    
+    <div id="f">
+        <div id="g">
+            <div id="x">
+                <label for="name" >Name:</label>
+                <input type="text" placeholder="your name" id="name" style="margin-left: 70px;"><br />
+
+                <label for="Email">Email:</label>
+                <input type="email" placeholder="your email" id="Email" style="margin-left: 70px;"><br />
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" style="margin-left: 40px;"><br />
+
+                <label for="phn">Phone Number:</label>
+                <input id="phn" type="number"><br />
+
+                <label for="gen">Gender:</label>
+                <label class="k" for="male">Male:</label>
+                <input type="radio" id="male" name="gen" value="male">
+                <label for="female">Female:</label>
+                <input type="radio" id="female" name="gen" value="female">
+                <label for="others">Others:</label>
+                <input type="radio" id="others" value="others"><br />
+                
+                <label for="lang">Language:</label>
+                <select id="lang" name="lang" style="margin-left: 40px;">
+                    <option value="select">Select language</option>
+                    <option value="english">English</option>
+                    <option value="telugu">Telugu</option>
+                    <option value="hindi">Hindi</option>
+                </select><br />
+
+                <label for="zip">Zip Code:</label>
+                <input type="number" id="zip" style="margin-left: 45px;"><br />
+                <table>
+                    <tr>
+                        <th>About:</th>
+                        <td><textarea rows=2 id="about" placeholder="Write about yourself.." style="margin-left: 60px;"></textarea></td><br>
+                    </tr>
+                </table><br />
+                <input type="submit" value="Register"><br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

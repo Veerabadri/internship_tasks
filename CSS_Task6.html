@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input{
+            width: 400px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"]{
+            width: 423px;
+            background-color: rgb(42, 158, 42);
+            color: white;
+        }
+
+        input[type="checkbox"]{
+            width: 10px;
+            padding: 0px;
+            margin-left: 0px;
+            float: left;
+        }
+        button{
+            width: 70px;
+            height: 30px;
+            color: white;
+            background-color: red;
+            border-radius: 5px;
+            border-color: red;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            margin-left: -10px;
+            display: inline;
+            font-weight: bold;
+        }
+        p{
+            display: inline;
+            margin-left: 220px;
+            font-weight: bold;
+        }
+
+        a{
+            background-color: rgba(223, 218, 218, 0.619);
+            width: 423px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #a{
+            width: 400px;
+        }
+
+        img{
+            margin-left: 15px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <form action="">
+        <div>
+            <div id="a" style="margin: 0 auto;">
+                <center>
+                    <img src="icon.png" alt="" width="200px" height="200px"><br>
+                </center>
+                <label for="us">Username</label><br>
+                <input type="text" id="un" placeholder="Enter Username"><br><br>
+
+                <label for="pw">Password</label><br>
+                <input type="password" id="pw" placeholder="Enter Password"><br><br>
+
+                <input type="submit" name="Login" value="Login"><br>
+
+                <input type="checkbox" name="remember" id="rem">
+                <label for="rem" id="s">Remember me</label><br>
+
+                <div id="q" style="padding: 0px;">
+                    <button>Cancel</button>
+                    <p>Forgot <a href="">password</a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
