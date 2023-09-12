@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!--display flex for horizantal nv bar-->
+        <!--remove display flex for vertical bar-->
+        <style>
+            #z {
+                list-style-type: none;
+                margin: auto;
+                padding: 10px;
+                background-color: silver;
+                width: 400px;
+                border: 1px solid black;
+                border-collapse: collapse;
+                display: flex;
+                /*float: right;*/
+                text-align: center;
+            }
+        
+            li a{
+                display: block;
+                text-decoration: none;
+                padding: 8px 16px;
+            }
+        li a:hover {
+            background-color: yellow;
+        }
+        h1{
+            /*float: right;*/
+            text-align: center;
+        }
+        #a{
+            list-style-type: none;
+            margin: 5px;
+            padding: 5px;
+            width: 150px;
+            background-color: skyblue;
+            border: 1px solid black;
+        }
+        
+        </style>
+     </head>
+     <body>
+        <center>
+        <div class="horizantal-container">
+        <h1>Horizantal Navigation Bar</h1>
+        <ul id="z">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">Bootstrap</a></li>
+        </ul>
+        </div>
+    </center>
+        <div class="vertical-container">
+        <h2>Vertical Navigation Bar</h2>
+        <ul id="a">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">Bootstrap</a></li>
+        </ul>
+        </div>
+     </body>
+</html>
